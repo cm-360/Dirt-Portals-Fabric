@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "dirtportals-fabric",
+  "version": "1.0",
+
+  "name": "Dirt Portals (Fabric)",
+  "description": "Allows the creation of nether portals with dirt blocks.",
+  "authors": [ "CM360", "Rick South" ],
+  "contact": {
+    "homepage": "https://curseforge.com/minecraft/mc-mods/crying-portals-fabric",
+    "sources": "https://github.com/ricksouth/serilum-mc-mods/tree/master/sources-fabric/Crying%20Portals%20(Fabric)",
+    "issues": "https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Crying%20Portals"
+  },
+
+  "license": "All Right Reserved",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.github.cm360.dirtportals.Main" ] },
+  "mixins": [
+    "dirtportals_fabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": ">=1.19",
+    "java": ">=17",
+    "collective-fabric": ">=4.36"
+  }
+}
